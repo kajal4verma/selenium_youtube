@@ -29,6 +29,7 @@ public class base {
 	@AfterMethod
 	public void close_browser() {
 		driver.close();
+//		driver.getTitle();
 		
 	}
 

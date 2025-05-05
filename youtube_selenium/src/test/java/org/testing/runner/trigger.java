@@ -43,7 +43,7 @@ public class trigger {
 
 				String v = pkg.getContents() + "." + class_name.getContents();
 
-				XmlClass c1 = new XmlClass(v); // xmlclass
+				XmlClass c1 = new XmlClass(v); 
 
 				al.add(c1);
 

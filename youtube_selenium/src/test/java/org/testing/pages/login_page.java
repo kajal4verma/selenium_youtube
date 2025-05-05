@@ -25,18 +25,16 @@ public class login_page {
 		userid.sendKeys(user);
 		WebElement next=driver.findElement(By.xpath(p.getProperty("next")));
 		next.click();
-//		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
-//		WebElement pass =wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("password"))));
+
 
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement password=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("password"))));
-				
+		WebElement password=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("password"))));				
 		password.sendKeys(pass);
 		Thread.sleep(2000);
 
 		WebElement next1=driver.findElement(By.xpath(p.getProperty("next")));
 		next1.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 
 	}
 	

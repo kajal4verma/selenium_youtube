@@ -17,11 +17,14 @@ public class logout_page {
 	}
 	public void logout() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		WebElement profile=driver.findElement(By.xpath(p.getProperty("profile")));
 		profile.click();
 		Thread.sleep(2000);
 		WebElement signout=driver.findElement(By.xpath(p.getProperty("signout")));
 		signout.click();
+		Thread.sleep(2000);
+
 		
 	}
 

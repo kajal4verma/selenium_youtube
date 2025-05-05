@@ -19,11 +19,9 @@ public class vedio_play_page {
 		
 	}
 	public void play_vedio() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement vedio= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("vedio_link"))));
 		vedio.click();
-//		WebElement vedio=driver.findElement(By.xpath(p.getProperty("vedio_link")));
-//		vedio.click();
 		Thread.sleep(2000);
 		WebElement like=driver.findElement(By.xpath(p.getProperty("like")));
 		like.click();
@@ -33,19 +31,18 @@ public class vedio_play_page {
 		Thread.sleep(2000);
 	}
 	public void play_vedio2() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement vedio= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("vedio_link2"))));
 		vedio.click();
-Thread.sleep(2000);
+        Thread.sleep(2000);
 
 	}
 	public void comment() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		Thread.sleep(1000);
 		WebElement  sort=driver.findElement(By.xpath(p.getProperty("sort")));
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView()",sort);
-//		Thread.sleep(1000);
 		WebElement comment=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("comment"))));
 		js.executeScript("arguments[0].click()",comment);
 
@@ -62,9 +59,10 @@ Thread.sleep(2000);
 
 	}
 	public void subscribe() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement subscribe1=driver.findElement(By.xpath(p.getProperty("subscribe")));
 		subscribe1.click();
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement subscribe=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(p.getProperty("subscribe_notification"))));
 
 		subscribe.click();

@@ -23,18 +23,21 @@ public class home_page {
 		Thread.sleep(2000);
 		WebElement trending=driver.findElement(By.xpath(p.getProperty("trending")));
 		trending.click();
-		
+		Thread.sleep(2000);
 	}
 	public void click_history() throws InterruptedException {
 		Thread.sleep(2000);
 		WebElement history=driver.findElement(By.xpath(p.getProperty("history")));
 		history.click();
+		Thread.sleep(2000);
 	}
-	public void search() {
+	public void search() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement search=driver.findElement(By.xpath(p.getProperty("search")));
 		search.sendKeys("chhota bheem");
 		WebElement search_btn=driver.findElement(By.xpath(p.getProperty("search_btn")));
 		search_btn.click();	
+		Thread.sleep(2000);
 		
 	}
 	public void search2() throws InterruptedException {
@@ -44,21 +47,25 @@ public class home_page {
 		Thread.sleep(2000);
 		WebElement search_btn=driver.findElement(By.xpath(p.getProperty("search_btn")));
 		search_btn.click();	
-		
+		Thread.sleep(2000);
+
 		}
-	public void subscription() {
+	public void subscription() throws InterruptedException {
+		Thread.sleep(2000);
 		WebElement subscription=driver.findElement(By.xpath(p.getProperty("subs")));
 		subscription.click();
-		
+		Thread.sleep(2000);
+	
 	}
     public void watchlist() throws InterruptedException {
+		Thread.sleep(2000);
 	WebElement subscription=driver.findElement(By.xpath(p.getProperty("watchlist")));
 	subscription.click();
 	Thread.sleep(2000);
 	
     }
     public void playlist() throws InterruptedException {
-//    	Thread.sleep(2000);
+    	Thread.sleep(2000);
     	WebElement p_list=driver.findElement(By.xpath(p.getProperty("playlist")));
 		p_list.click();
 		Thread.sleep(2000);

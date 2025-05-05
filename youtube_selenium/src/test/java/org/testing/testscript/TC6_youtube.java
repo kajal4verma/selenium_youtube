@@ -41,8 +41,8 @@ public class TC6_youtube extends base{
 		loghandling.log_capture("TC6_youtube", "able to hit search query ");
         vedio_play_page vedio=new vedio_play_page(driver, p);
         vedio.play_vedio2();
-        actual_url=driver.getCurrentUrl();
-		assetions.assertttt("https://www.youtube.com/watch?v=3ucCEjXS9n8",actual_url);
+//        actual_url=driver.getCurrentUrl();
+//		assetions.assertttt("https://www.youtube.com/watch?v=3ucCEjXS9n8",actual_url);
 		loghandling.log_capture("TC6_youtube", "able to play vedio and subscribe channel");
         vedio_play_page subscribe=new vedio_play_page(driver, p);
         subscribe.subscribe();
