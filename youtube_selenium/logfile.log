@@ -228,3 +228,19 @@
 2025-05-18 10:02:49,882 INFO  [TC7_youtube] able to click on watchlist  
 2025-05-18 10:02:56,991 INFO  [TC7_youtube] url is matching after signout  
 2025-05-18 10:02:57,002 INFO  [TC7_youtube] testcase 7 is getting pass 
+2025-05-18 10:19:49,899 INFO  [TC1_youtube] url is matching after signin 
+2025-05-18 10:19:54,145 INFO  [TC1_youtube] able to click on trending 
+2025-05-18 10:20:04,251 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-18 10:20:04,287 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-18 10:20:27,364 INFO  [TC2_youtube] url is match after signin 
+2025-05-18 10:20:31,869 INFO  [TC2_youtube] able to click on history 
+2025-05-18 10:20:48,447 INFO  [TC2_youtube] url is match after signout 
+2025-05-18 10:20:48,474 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-18 10:23:33,679 INFO  [TC1_youtube] url is matching after signin 
+2025-05-18 10:23:37,886 INFO  [TC1_youtube] able to click on trending 
+2025-05-18 10:23:46,667 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-18 10:23:46,709 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-18 10:24:06,553 INFO  [TC2_youtube] url is match after signin 
+2025-05-18 10:24:10,908 INFO  [TC2_youtube] able to click on history 
+2025-05-18 10:24:22,150 INFO  [TC2_youtube] url is match after signout 
+2025-05-18 10:24:22,174 INFO  [TC2_youtube] testcase2 is getting pass 
