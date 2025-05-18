@@ -2,14 +2,22 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="1"/>
+      </run>
+    </groups>
     <classes>
-      <class name="org.testing.testscript.TC6_youtube">
+      <class name="org.testing.testscript.TC9_youtube">
         <methods>
-          <include name="tc6"/>
-          <include name="close_browser"/>
-          <include name="open_browser"/>
+          <include name="tc9"/>
         </methods>
-      </class> <!-- org.testing.testscript.TC6_youtube -->
+      </class> <!-- org.testing.testscript.TC9_youtube -->
+      <class name="org.testing.testscript.TC1_youtube">
+        <methods>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC1_youtube -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

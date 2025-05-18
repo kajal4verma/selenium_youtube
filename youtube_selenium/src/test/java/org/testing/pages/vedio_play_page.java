@@ -1,6 +1,7 @@
 package org.testing.pages;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -77,6 +78,18 @@ public class vedio_play_page {
 
 	
 
+	}
+	public void play_all_vedio() throws InterruptedException 
+	{
+		List<WebElement> list=driver.findElements(By.xpath("//*[@*=\"video-title\"]"));
+		for(int i=1;i<list.size();i++) {
+			((JavascriptExecutor) driver).executeScript("arguments[0].click()", list.get(i));
+			Thread.sleep(2000);
+			driver.navigate().back();
+			
+		}
+
+         System.out.println("size is "+list.size());
 	}
 
 }

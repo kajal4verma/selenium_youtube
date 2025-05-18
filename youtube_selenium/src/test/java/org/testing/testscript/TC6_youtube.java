@@ -1,5 +1,7 @@
 package org.testing.testscript;
 
+import java.io.IOException;
+
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -15,20 +17,21 @@ import org.testing.pages.logout_page;
 import org.testing.pages.vedio_play_page;
 import org.testing.reporthandling.loghandling;
 import org.testing.reporthandling.report_handling;
+import org.testing.reporthandling.screenCapture;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
+
 
 public class TC6_youtube extends base{
 	
 	@Test
-	public void tc6() throws InterruptedException {	
-		ExtentReports report= report_handling.report();
-		ExtentTest tc6=report.startTest("TC6_youtube");
+	public void tc6() throws InterruptedException, IOException {	
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+
+		test=report.createTest("test_case6");
 		login_page login=new login_page(driver, p);
 		login.sigin("kajal9999v@gmail.com", "Rani@1997");
 		String actual_url=driver.getCurrentUrl();
@@ -41,11 +44,14 @@ public class TC6_youtube extends base{
 		loghandling.log_capture("TC6_youtube", "able to hit search query ");
         vedio_play_page vedio=new vedio_play_page(driver, p);
         vedio.play_vedio2();
-//        actual_url=driver.getCurrentUrl();
-//		assetions.assertttt("https://www.youtube.com/watch?v=3ucCEjXS9n8",actual_url);
+        actual_url=driver.getCurrentUrl();
+		assetions.assertttt("https://www.youtube.com/watch?v=3ucCEjXS9n8",actual_url);
 		loghandling.log_capture("TC6_youtube", "able to play vedio and subscribe channel");
         vedio_play_page subscribe=new vedio_play_page(driver, p);
         subscribe.subscribe();
+        screenCapture screen=new screenCapture(driver);
+		String sceen1= screen.screenshot("C:\\Users\\Nishant Kumar\\Documents\\subscribe.png");
+         test.addScreenCaptureFromPath(sceen1 );
         logout_page logout=new logout_page(driver, p);
         logout.logout();
         loghandling.log_capture("TC6_youtube", "url is matching after signout ");
@@ -53,17 +59,19 @@ public class TC6_youtube extends base{
 		Boolean res= assetions.assertttt("https://www.youtube.com/",actual_url);
 
 	if(res)
-	{
-		tc6.log(LogStatus.PASS, "testcase6 is getting pass");
+	{   
+		test.pass("test case getting pass...");
+//		tc6.log(LogStatus.PASS, "testcase6 is getting pass");
 		loghandling.log_capture("TC6_youtube", "testcase 6 is getting pass");
 	}
 	else
 	{
-		tc6.log(LogStatus.FAIL, "testcase6 is getting fail");
+		test.fail("test case getting fail...");
+//		tc6.log(LogStatus.FAIL, "testcase6 is getting fail");
 		loghandling.log_capture("TC6_youtube", "testcase 6 is getting fail");
 
 	}
-	report.endTest(tc6);
+//	report.endTest(tc6);
 	report.flush();
 	}
 	}

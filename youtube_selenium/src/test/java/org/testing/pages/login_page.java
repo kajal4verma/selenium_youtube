@@ -8,13 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class login_page {
 	ChromeDriver driver;
 	Properties p;
+	
 	public login_page(ChromeDriver driver,Properties p)
-	{ this.driver=driver;
-	this.p=p;
+	{ 
+		this.driver = driver;
+	    this.p = p;
 		
 	}
 
@@ -35,6 +38,8 @@ public class login_page {
 		WebElement next1=driver.findElement(By.xpath(p.getProperty("next")));
 		next1.click();
 		Thread.sleep(4000);
+        Assert.assertEquals(driver.getTitle(), "YouTube", "Title mismatch");
+      
 
 	}
 	

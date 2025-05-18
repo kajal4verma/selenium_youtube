@@ -1,5 +1,6 @@
 package org.testing.testscript;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -14,20 +15,18 @@ import org.testing.pages.login_page;
 import org.testing.pages.logout_page;
 import org.testing.reporthandling.loghandling;
 import org.testing.reporthandling.report_handling;
+import org.testing.reporthandling.screenCapture;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class TC7_youtube extends base {
 	
-	@Test
-	public void tc7() throws InterruptedException {
-		ExtentReports report= report_handling.report();
-		ExtentTest tc7=report.startTest("TC7_youtube");
+	@Test(groups = "yes")
+	public void tc7() throws InterruptedException, IOException {
+		test=report.createTest("test_case7");
 		login_page login=new login_page(driver, p);
 		login.sigin("kajal9999v@gmail.com", "Rani@1997");
 		String actual_url=driver.getCurrentUrl();
@@ -38,6 +37,9 @@ public class TC7_youtube extends base {
 	    actual_url=driver.getCurrentUrl();
 		assetions.assertttt("https://www.youtube.com/playlist?list=WL",actual_url);	 
 		loghandling.log_capture("TC7_youtube", "able to click on watchlist ");
+		screenCapture screen=new screenCapture(driver);
+		String sceen1= screen.screenshot("C:\\Users\\Nishant Kumar\\Documents\\watchlist.png");
+         test.addScreenCaptureFromPath(sceen1 );
 	    logout_page logout=new logout_page(driver, p);
 	    logout.logout();
 	    loghandling.log_capture("TC7_youtube", "url is matching after signout ");
@@ -46,16 +48,18 @@ public class TC7_youtube extends base {
 
 	if(res)
 	{
-		tc7.log(LogStatus.PASS, "testcase7 is getting pass");
+		test.pass("test case geting pass...");
+//		tc7.log(LogStatus.PASS, "testcase7 is getting pass");
 		loghandling.log_capture("TC7_youtube", "testcase 7 is getting pass");
 	}
 	else
 	{
-		tc7.log(LogStatus.FAIL, "testcase7 is getting fail");
+		test.fail("test case getting fail..");
+		//		tc7.log(LogStatus.FAIL, "testcase7 is getting fail");
 		loghandling.log_capture("TC7_youtube", "testcase 7 is getting fail");
 
 	}
-	report.endTest(tc7);
+//	report.endTest(tc7);
 	report.flush();
 	}
 	}

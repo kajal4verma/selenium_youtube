@@ -18,24 +18,25 @@ import org.testing.pages.login_page;
 import org.testing.pages.logout_page;
 import org.testing.reporthandling.loghandling;
 import org.testing.reporthandling.report_handling;
+import org.testing.reporthandling.screenCapture;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class TC2_youtube extends  base{
+//import com.relevantcodes.extentreports.LogStatus;
+
+public class TC2_youtube extends base{
      
 	
 
 	@Test
-	public void tc2() throws InterruptedException 
+	public void tc2() throws InterruptedException, IOException 
 	{
-		   
-		ExtentReports report= report_handling.report();
-		ExtentTest tc2=report.startTest("TC2_youtube");
+//		   
+//		
+		test=report.createTest("test_case2");
 			login_page login=new login_page(driver, p);
 			login.sigin("kajal9999v@gmail.com", "Rani@1997");
 			String actual_url=driver.getCurrentUrl();
@@ -47,7 +48,9 @@ public class TC2_youtube extends  base{
 		    actual_url=driver.getCurrentUrl();
 		    assetions.assertttt("https://www.youtube.com/feed/history", actual_url);
 			loghandling.log_capture("TC2_youtube", "able to click on history");
-
+			screenCapture screen=new screenCapture(driver);
+			String screen1= screen.screenshot("C:\\\\Users\\\\Nishant Kumar\\\\Documents\\\\history.png");
+            test.addScreenCaptureFromPath(screen1);
 		    logout_page logout=new logout_page(driver, p);
 		    logout.logout();
 		   
@@ -55,16 +58,18 @@ public class TC2_youtube extends  base{
 			actual_url=driver.getCurrentUrl();
 			Boolean res= assetions.assertttt("https://www.youtube.com/",actual_url);
 			if(res) {
-				tc2.log(LogStatus.PASS,"testcase2 is getting pass");
+				test.pass("test cases getting passed..");
+//				tc2.log(LogStatus.PASS,"testcase2 is getting pass");
 				loghandling.log_capture("TC2_youtube", "testcase2 is getting pass");
 			}
 			else
 			{
-				tc2.log(LogStatus.FAIL,"testcase2 is getting fail");
+				test.fail("test cases getting failed...");
+//				tc2.log(LogStatus.FAIL,"testcase2 is getting fail");
 				loghandling.log_capture("TC2_youtube", "testcase2 is getting fail");
 
 			}
-			report.endTest(tc2);
+			
 			report.flush();
 			
 	
