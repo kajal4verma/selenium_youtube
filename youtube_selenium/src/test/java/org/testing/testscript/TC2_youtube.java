@@ -31,7 +31,7 @@ public class TC2_youtube extends base{
      
 	
 
-	@Test
+	@Test(groups = "y")
 	public void tc2() throws InterruptedException, IOException 
 	{
 //		   

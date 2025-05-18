@@ -39,7 +39,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class TC1_youtube extends base{
 	
 	
-	@Test
+	@Test(groups = "y")
 	public void tc1() throws InterruptedException, IOException {
 		
    test=report.createTest("test_case1");
