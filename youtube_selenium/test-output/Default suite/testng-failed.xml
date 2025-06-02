@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.testing.testscript.TC1_youtube">
+      <class name="org.testing.testscript.TC4_youtube">
         <methods>
           <include name="close_browser"/>
           <include name="open_browser"/>
-          <include name="tc1"/>
+          <include name="tc4"/>
         </methods>
-      </class> <!-- org.testing.testscript.TC1_youtube -->
+      </class> <!-- org.testing.testscript.TC4_youtube -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

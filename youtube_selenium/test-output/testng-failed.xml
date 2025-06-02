@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="org.testing.testscript.TC2_youtube">
+        <methods>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+          <include name="tc2"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC2_youtube -->
+      <class name="org.testing.testscript.TC8_youtube">
+        <methods>
+          <include name="tc8"/>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC8_youtube -->
       <class name="org.testing.testscript.TC1_youtube">
         <methods>
           <include name="close_browser"/>
@@ -10,6 +24,48 @@
           <include name="tc1"/>
         </methods>
       </class> <!-- org.testing.testscript.TC1_youtube -->
+      <class name="org.testing.testscript.TC7_youtube">
+        <methods>
+          <include name="tc7"/>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC7_youtube -->
+      <class name="org.testing.testscript.TC4_youtube">
+        <methods>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+          <include name="tc4"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC4_youtube -->
+      <class name="org.testing.testscript.TC3_youtube">
+        <methods>
+          <include name="tc3"/>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC3_youtube -->
+      <class name="org.testing.testscript.TC6_youtube">
+        <methods>
+          <include name="close_browser"/>
+          <include name="tc6"/>
+          <include name="open_browser"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC6_youtube -->
+      <class name="org.testing.testscript.TC9_youtube">
+        <methods>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+          <include name="tc9"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC9_youtube -->
+      <class name="org.testing.testscript.TC5_youtube">
+        <methods>
+          <include name="close_browser"/>
+          <include name="tc5"/>
+          <include name="open_browser"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC5_youtube -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -39,7 +39,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class TC1_youtube extends base{
 	
 	
-	@Test(groups = "y")
+	@Test
 	public void tc1() throws InterruptedException, IOException {
 		
    test=report.createTest("test_case1");
@@ -56,10 +56,9 @@ public class TC1_youtube extends base{
 		home.click_trending();
 		loghandling.log_capture("TC1_youtube", "able to click on trending");
 		actual_url=driver.getCurrentUrl();
-		assetions.assertttt("https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl", actual_url);
+		assetions.assertttt("https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl...", actual_url);
 		screenCapture screen=new screenCapture(driver);
 		String screen1= screen.screenshot("C:\\Users\\Nishant Kumar\\Documents\\trending.png");
-		test.addScreenCaptureFromPath(screen1);
 		logout_page logout=new logout_page(driver, p);
 		logout.logout();	
 //      Assert.assertTrue(logout.is, "Logout button not displayed");
@@ -70,6 +69,7 @@ public class TC1_youtube extends base{
 		
 		if(res) {
 			test.pass("test case getting passed..");
+			test.addScreenCaptureFromPath(screen1);
 //			String screen= screenCapture.screenshot("C:\\Users\\Nishant Kumar\\Documents\\screenshot.png");
 			loghandling.log_capture("TC1_youtube", "testcase1 is getting pass");
 
@@ -77,13 +77,14 @@ public class TC1_youtube extends base{
 		else {
 //			tc1.log(LogStatus.FAIL,"TestCase1 of ui is not getting passed");
 			test.fail("test case getting failed");
+			test.addScreenCaptureFromPath(screen1);
 		
 //			test.addScreenCaptureFromPath(screen1);
 			loghandling.log_capture("TC1_youtube", "testcase1 is getting fail");
 
 		}
 //		report.endTest(tc1);
-//		report.flush();
+		report.flush();
 		
 		
 	

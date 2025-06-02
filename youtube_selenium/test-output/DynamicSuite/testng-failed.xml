@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DynamicSuite]">
+  <test thread-count="5" name="DynamicTest(failed)">
+    <classes>
+      <class name="org.testing.testscript.TC1_youtube">
+        <methods>
+          <include name="close_browser"/>
+          <include name="open_browser"/>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.testing.testscript.TC1_youtube -->
+    </classes>
+  </test> <!-- DynamicTest(failed) -->
+</suite> <!-- Failed suite [DynamicSuite] -->

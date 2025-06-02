@@ -19,11 +19,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
 public class base {
-   public	ChromeDriver driver;
+	protected  	ChromeDriver driver;
     public Properties p;  
 	static boolean isLogoutDisplayed;
     public ExtentReports report;
@@ -31,6 +32,10 @@ public class base {
 	@BeforeMethod(alwaysRun = true)
 	public void open_browser() throws IOException {
 		p=	properties.properties_handle("../youtube_selenium/object.properties");
+        WebDriverManager.chromedriver().setup();
+
+//	    System.setProperty("webdriver.chrome.driver", "C:/Users/Nishant Kumar/Downloads/chromedriver/chromedriver.exe");
+
 		driver=new ChromeDriver();
 		driver.get("http://www.youtube.com");
 		driver.manage().window().maximize();

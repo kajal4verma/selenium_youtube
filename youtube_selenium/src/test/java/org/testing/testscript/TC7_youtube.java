@@ -24,7 +24,7 @@ import org.testng.annotations.Test;
 
 public class TC7_youtube extends base {
 	
-	@Test(groups = "yes")
+	@Test
 	public void tc7() throws InterruptedException, IOException {
 		test=report.createTest("test_case7");
 		login_page login=new login_page(driver, p);

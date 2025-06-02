@@ -244,3 +244,141 @@
 2025-05-18 10:24:10,908 INFO  [TC2_youtube] able to click on history 
 2025-05-18 10:24:22,150 INFO  [TC2_youtube] url is match after signout 
 2025-05-18 10:24:22,174 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-18 10:44:15,061 INFO  [TC1_youtube] url is matching after signin 
+2025-05-18 10:44:19,181 INFO  [TC1_youtube] able to click on trending 
+2025-05-18 10:44:26,584 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-18 10:44:26,606 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-18 10:44:43,869 INFO  [TC2_youtube] url is match after signin 
+2025-05-18 10:44:48,157 INFO  [TC2_youtube] able to click on history 
+2025-05-18 10:44:55,825 INFO  [TC2_youtube] url is match after signout 
+2025-05-18 10:44:55,843 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-18 10:57:45,911 INFO  [TC1_youtube] url is matching after signin 
+2025-05-18 10:57:50,067 INFO  [TC1_youtube] able to click on trending 
+2025-05-18 10:57:57,360 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-18 10:57:57,393 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-18 10:59:02,564 INFO  [TC1_youtube] url is matching after signin 
+2025-05-18 10:59:06,721 INFO  [TC1_youtube] able to click on trending 
+2025-05-18 10:59:14,212 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-18 10:59:14,248 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-29 11:49:34,039 INFO  [TC1_youtube] url is matching after signin 
+2025-05-29 11:49:38,194 INFO  [TC1_youtube] able to click on trending 
+2025-05-29 11:49:45,772 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-29 11:49:45,787 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-29 11:50:45,077 INFO  [TC2_youtube] url is match after signin 
+2025-05-29 11:50:49,416 INFO  [TC2_youtube] able to click on history 
+2025-05-29 11:50:57,000 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 11:50:57,013 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-29 11:52:14,218 INFO  [TC1_youtube] url is matching after signin 
+2025-05-29 11:52:18,381 INFO  [TC1_youtube] able to click on trending 
+2025-05-29 11:52:25,806 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-29 11:52:25,833 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-29 11:54:12,127 INFO  [TC1_youtube] url is matching after signin 
+2025-05-29 11:54:16,287 INFO  [TC1_youtube] able to click on trending 
+2025-05-29 11:54:23,820 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-29 11:54:23,851 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-29 11:54:48,334 INFO  [TC4_youtube] url is matching after signin 
+2025-05-29 11:54:52,464 INFO  [TC4_youtube] able to click on subscription 
+2025-05-29 11:54:59,924 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 11:54:59,939 INFO  [TC4_youtube] testcase4 is getting pass 
+2025-05-29 11:56:33,363 INFO  [TC1_youtube] url is matching after signin 
+2025-05-29 11:56:37,498 INFO  [TC1_youtube] able to click on trending 
+2025-05-29 11:56:44,889 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-29 11:56:44,903 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-29 11:57:04,256 INFO  [TC2_youtube] url is match after signin 
+2025-05-29 11:57:08,572 INFO  [TC2_youtube] able to click on history 
+2025-05-29 11:57:19,366 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 11:57:19,376 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-29 12:10:10,618 INFO  [TC4_youtube] url is matching after signin 
+2025-05-29 12:10:14,786 INFO  [TC4_youtube] able to click on subscription 
+2025-05-29 12:10:22,068 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 12:10:22,088 INFO  [TC4_youtube] testcase4 is getting pass 
+2025-05-29 12:10:41,161 INFO  [TC5_youtube] url is matching after sigin  
+2025-05-29 12:10:45,366 INFO  [TC5_youtube] able to hit search Query 
+2025-05-29 12:10:47,506 INFO  [TC5_youtube] able to play vedio and send comment  
+2025-05-29 12:11:03,688 INFO  [TC5_youtube] url is matching after signout 
+2025-05-29 12:11:03,705 INFO  [TC5_youtube] testcase 5 is getting pass 
+2025-05-29 12:11:22,226 INFO  [TC6_youtube] url is matching after sigin  
+2025-05-29 12:11:26,765 INFO  [TC6_youtube] able to hit search query  
+2025-05-29 12:11:55,741 INFO  [TC7_youtube] url is matching after sigin  
+2025-05-29 12:11:59,847 INFO  [TC7_youtube] able to click on watchlist  
+2025-05-29 12:12:07,053 INFO  [TC7_youtube] url is matching after signout  
+2025-05-29 12:12:07,065 INFO  [TC7_youtube] testcase 7 is getting pass 
+2025-05-29 12:12:25,122 INFO  [TC8_youtube] url is matching after sigin  
+2025-05-29 12:12:29,239 INFO  [TC8_youtube] able to click on playlist 
+2025-05-29 12:12:36,295 INFO  [TC8_youtube] url is matching after signout  
+2025-05-29 12:12:36,306 INFO  [TC8_youtube] testcase 8 is getting pass 
+2025-05-29 12:12:55,119 INFO  [TC9_youtube] url is getting matched after signin 
+2025-05-29 12:14:01,296 INFO  [TC9_youtube] url is getting matched after signout 
+2025-05-29 12:14:01,472 INFO  [TC9_youtube] testcase 9 is getting pass 
+2025-05-29 12:34:01,638 INFO  [TC1_youtube] url is matching after signin 
+2025-05-29 12:34:05,768 INFO  [TC1_youtube] able to click on trending 
+2025-05-29 12:34:13,213 INFO  [TC1_youtube] url is  matching after logout 
+2025-05-29 12:34:13,244 INFO  [TC1_youtube] testcase1 is getting pass 
+2025-05-29 12:34:35,405 INFO  [TC2_youtube] url is match after signin 
+2025-05-29 12:34:40,189 INFO  [TC2_youtube] able to click on history 
+2025-05-29 12:34:55,194 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 12:34:55,220 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-29 12:35:15,350 INFO  [TC3_youtube] url is matching after sigin  
+2025-05-29 12:35:19,563 INFO  [TC3_youtube] able to hit search button 
+2025-05-29 12:35:26,478 INFO  [TC3_youtube] able to play vedio 
+2025-05-29 12:35:34,097 INFO  [TC3_youtube] url is matching after signout 
+2025-05-29 12:35:34,111 INFO  [TC3_youtube] testcase 3 is getting pass 
+2025-05-29 12:36:42,138 INFO  [TC1_youtube] url is matching after signin 
+2025-05-29 12:36:46,404 INFO  [TC1_youtube] able to click on trending 
+2025-05-29 12:37:10,234 INFO  [TC2_youtube] url is match after signin 
+2025-05-29 12:37:14,630 INFO  [TC2_youtube] able to click on history 
+2025-05-29 12:37:24,767 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 12:37:24,808 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-29 12:37:46,271 INFO  [TC3_youtube] url is matching after sigin  
+2025-05-29 12:37:50,818 INFO  [TC3_youtube] able to hit search button 
+2025-05-29 12:37:57,538 INFO  [TC3_youtube] able to play vedio 
+2025-05-29 12:38:05,291 INFO  [TC3_youtube] url is matching after signout 
+2025-05-29 12:38:05,344 INFO  [TC3_youtube] testcase 3 is getting pass 
+2025-05-29 12:38:27,451 INFO  [TC4_youtube] url is matching after signin 
+2025-05-29 12:38:31,902 INFO  [TC4_youtube] able to click on subscription 
+2025-05-29 12:38:39,564 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 12:38:39,589 INFO  [TC4_youtube] testcase4 is getting pass 
+2025-05-29 12:39:02,715 INFO  [TC5_youtube] url is matching after sigin  
+2025-05-29 12:39:07,414 INFO  [TC5_youtube] able to hit search Query 
+2025-05-29 12:39:09,833 INFO  [TC5_youtube] able to play vedio and send comment  
+2025-05-29 12:39:26,823 INFO  [TC5_youtube] url is matching after signout 
+2025-05-29 12:39:26,848 INFO  [TC5_youtube] testcase 5 is getting pass 
+2025-05-29 12:39:48,656 INFO  [TC6_youtube] url is matching after sigin  
+2025-05-29 12:39:53,671 INFO  [TC6_youtube] able to hit search query  
+2025-05-29 12:39:56,046 INFO  [TC6_youtube] able to play vedio and subscribe channel 
+2025-05-29 12:40:12,856 INFO  [TC6_youtube] url is matching after signout  
+2025-05-29 12:40:12,895 INFO  [TC6_youtube] testcase 6 is getting pass 
+2025-05-29 12:40:35,015 INFO  [TC7_youtube] url is matching after sigin  
+2025-05-29 12:40:39,266 INFO  [TC7_youtube] able to click on watchlist  
+2025-05-29 12:40:46,639 INFO  [TC7_youtube] url is matching after signout  
+2025-05-29 12:40:46,662 INFO  [TC7_youtube] testcase 7 is getting pass 
+2025-05-29 12:41:08,929 INFO  [TC8_youtube] url is matching after sigin  
+2025-05-29 12:41:13,208 INFO  [TC8_youtube] able to click on playlist 
+2025-05-29 12:41:20,708 INFO  [TC8_youtube] url is matching after signout  
+2025-05-29 12:41:20,757 INFO  [TC8_youtube] testcase 8 is getting pass 
+2025-05-29 12:41:41,760 INFO  [TC9_youtube] url is getting matched after signin 
+2025-05-29 12:42:34,005 INFO  [TC9_youtube] url is getting matched after signout 
+2025-05-29 12:42:34,108 INFO  [TC9_youtube] testcase 9 is getting pass 
+2025-05-29 13:30:00,326 INFO  [TC6_youtube] url is matching after sigin  
+2025-05-29 13:30:04,809 INFO  [TC6_youtube] able to hit search query  
+2025-05-29 13:30:06,958 INFO  [TC6_youtube] able to play vedio and subscribe channel 
+2025-05-29 13:30:23,100 INFO  [TC6_youtube] url is matching after signout  
+2025-05-29 13:30:23,122 INFO  [TC6_youtube] testcase 6 is getting pass 
+2025-05-29 13:30:51,030 INFO  [TC5_youtube] url is matching after sigin  
+2025-05-29 13:30:55,459 INFO  [TC5_youtube] able to hit search Query 
+2025-05-29 13:30:57,938 INFO  [TC5_youtube] able to play vedio and send comment  
+2025-05-29 13:31:15,516 INFO  [TC5_youtube] url is matching after signout 
+2025-05-29 13:31:15,555 INFO  [TC5_youtube] testcase 5 is getting pass 
+2025-05-29 13:31:38,325 INFO  [TC2_youtube] url is match after signin 
+2025-05-29 13:31:42,913 INFO  [TC2_youtube] able to click on history 
+2025-05-29 13:31:56,458 INFO  [TC2_youtube] url is match after signout 
+2025-05-29 13:31:56,470 INFO  [TC2_youtube] testcase2 is getting pass 
+2025-05-29 13:32:17,187 INFO  [TC9_youtube] url is getting matched after signin 
+2025-05-29 13:49:09,394 INFO  [TC6_youtube] url is matching after sigin  
+2025-05-29 14:01:22,299 INFO  [TC6_youtube] url is matching after sigin  
+2025-05-30 09:08:29,537 INFO  [TC6_youtube] url is matching after sigin  
+2025-05-30 09:08:34,467 INFO  [TC6_youtube] able to hit search query  
+2025-05-30 09:08:37,439 INFO  [TC6_youtube] able to play vedio and subscribe channel 
+2025-06-02 10:01:57,543 INFO  [TC6_youtube] url is matching after sigin  
+2025-06-02 10:02:01,888 INFO  [TC6_youtube] able to hit search query  
+2025-06-02 10:02:04,168 INFO  [TC6_youtube] able to play vedio and subscribe channel 
